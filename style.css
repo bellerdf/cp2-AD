@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf2f8;
+    /* Fundo principal rosa bem claro */
+    color: #701a75;
+    /* Texto padrão em tom escuro para contraste */
+    padding: 24px;
+}
+
+h1 {
+    margin: 0 0 24px 0;
+    color: #9d174d;
+    /* Título em rosa escuro/magenta */
+}
+
+.controles {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 8px;
+}
+
+.busca {
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #fbcfe8;
+    /* Borda rosa clara */
+    background-color: #ffffff;
+    /* Fundo do input branco */
+    color: #831843;
+    min-width: 220px;
+}
+
+.busca::placeholder {
+    color: #f472b6;
+    /* Cor do texto de placeholder */
+}
+
+.contador {
+    color: #db2777;
+    /* Rosa intermediário para o contador */
+    margin: 0 0 20px 0;
+}
+
+.grid-atores {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 20px;
+}
+
+.ator {
+    background-color: #fbcfe8;
+    /* Fundo do card do ator em rosa claro */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: 0 4px 6px rgba(236, 72, 153, 0.15);
+    /* Sombra em tom de rosa */
+}
+
+.ator:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(236, 72, 153, 0.25);
+    /* Sombra maior ao passar o mouse */
+}
+
+.ator img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+.ator .info {
+    padding: 10px 12px 14px 12px;
+}
